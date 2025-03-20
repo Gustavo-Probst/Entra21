@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid white;
+        }
+
+        td {
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Link para fora da página</h1>
+
+    <a href="https://ava.sesisenai.org.br/my/" target="_blank">AVA - Sesi Senai</a>
+    <br>
+    <a href="pagina2.html" style="font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: brown;">Página 2</a>
+    <br>
+    <hr>
+    <a href="https://pt.wikipedia.org/wiki/Pinguim" target="_blank">
+        <img src="./img/phoca_thumb_l_image03_grd.png" alt="Pinguins reunidos em um grupo" title="Pinguins" height="500px" width="500px">
+    </a>
+    <br><hr>
+    <span id="elemento" style="color: aqua;">elemento</span>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, perferendis aut ut, deleniti voluptates minima fugiat sunt in veritatis tempora quos suscipit tempore temporibus? Laboriosam perferendis dolorem aperiam ducimus consectetur.</p>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span style="color: crimson; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Iure vitae adipisci</span>, nihil ipsam ipsum impedit molestias ratione! Aliquam, quibusdam necessitatibus. Veniam error quaerat dolores, tempore iusto itaque nihil laborum fugiat!</p>
+    <br>
+    <p>Clique em <span id="clickable" style="color: yellow; text-decoration: underline; cursor: pointer; text-transform: uppercase;">este texto</span> para ver uma mensagem.</p>
+        <script>
+            document.getElementById('clickable').addEventListener('click', function () {
+                alert('Você clicou no texto!');
+            })
+        </script>
+    <a href="#elemento" style="color: blueviolet;">Voltar</a>
+    <br><hr>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>gustavo@gmail.com</td>
+            <td>Blumenau</td>
+        </tr>
+    </table>
+</body>
+</html>

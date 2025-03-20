@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style-formulario.css">
+</head>
+
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="index.html" method="POST" enctype="multipart/form-data">
+        <fieldset>
+
+            <legend>🆕 Novo Usuário</legend>
+
+            <label for="nome" id="titulo-label">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+
+            <label for="cpf" id="titulo-label">CPF:</label>
+            <input type="number" name="cpf" id="cpf">
+            <br><br>
+
+            <label for="idade" id="titulo-label">Idade:</label>
+            <input type="number" name="idade" id="idade">
+            <br>
+        </fieldset>
+        <br><br>
+
+        <label for="descricao" id="titulo-label">Descrição do pedido:</label>
+        <br><br>
+        <textarea name="descricao" id="descricao" cols="50" rows="10">
+            Descreva o pedido aqui
+        </textarea>
+        <br><br>
+
+        <label for="estado" id="titulo-label">UF:</label>
+        <br><br>
+        <select name="estado" id="estado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Santa Catarina</option>
+        </select>
+        <br><br>
+
+        <label for="genero" id="titulo-label">Sexo:</label>
+        <br><br>
+        <label for="M">Masculino 👨</label>
+        <input type="radio" name="genero" id="genero" value="M">
+        <br>
+        <label for="F">Feminino 👩</label>
+        <input type="radio" name="genero" id="genero" value="F">
+        <br><br>
+
+        <label for="interesse[]" id="titulo-label">Interesse(s):</label>
+        <br><br>
+        <label for="interesse[]">⚽ Esporte:</label>
+        <input type="checkbox" name="interesse[]" id="interesse[]" value="Esporte">
+        <br>
+        <label for="interesse[]">🎵 Música:</label>
+        <input type="checkbox" name="interesse[]" id="interesse[]" value="Música">
+        <br>
+        <label for="interesse[]">🍳 Culinária:</label>
+        <input type="checkbox" name="interesse[]" id="interesse[]" value="Culinária">
+        <br>
+        <label for="interesse[]">🎨 Arte:</label>
+        <input type="checkbox" name="interesse[]" id="interesse[]" value="Arte">
+        <br>
+        <label for="interesse[]">📚 Literatura:</label>
+        <input type="checkbox" name="interesse[]" id="interesse[]" value="Literatura">
+        <br><br>
+
+        <label for="documento" id="titulo-label">Anexe o(s) arquivo(s):</label>
+        <br><br>
+        <input type="file" name="documento" id="documento" accept=".pdf, .docx">
+        <br><br>
+
+        <label for="data-nascimento" id="titulo-label">Data do nascimento:</label>
+        <br><br>
+        <input type="date" name="data-nascimento" id="data-nascimento">
+        <br><br>
+
+        <label for="horario" id="titulo-label">Horário:</label>
+        <br><br>
+        <input type="time" name="horario" id="horario">
+        <br><br>
+
+        <button type="reset">🧹 Limpar Formulário</button>
+        <br><br>
+
+        <button type="submit">📤 Enviar Respostas</button>
+    </form>
+</body>
+
+</html>

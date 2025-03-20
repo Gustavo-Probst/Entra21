@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    margin-top: 50px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    border-width: 2px;
+    
+}
+
+th {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
